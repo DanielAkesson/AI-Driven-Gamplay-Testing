@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6005820321379343457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6005820321379343463}
+  - component: {fileID: 6005820321379343462}
+  m_Layer: 0
+  m_Name: Arena
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6005820321379343463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6005820321379343457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.5, y: -0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6005820321379343462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6005820321379343457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d2203a19fe99b4db25e362a000fb88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WorldSize: 10
+  NoiseScale: 102
+  Blocks:
+  - {fileID: 4341128480201226262, guid: 725e628816fb45e4cad62f22aad0e540, type: 3}
+  - {fileID: 4341128480201226262, guid: e986286e20c25f04aaef7c1883870c9b, type: 3}
+  - {fileID: 4341128480201226262, guid: 1837c546d9b572d4ea9631a10128a114, type: 3}
+  - {fileID: 1842817277888541580, guid: cf16b2a8c5a79544f99eb4019486ecca, type: 3}
+  Player_0: {fileID: 9201591203859757271, guid: f9811d25ffe58424aa710e9a9d217681,
+    type: 3}
+  Player_1: {fileID: 9201591203859757271, guid: 227a30b351f671144b428273aab271ed,
+    type: 3}
+  TeamColors:
+  - {r: 0.21226418, g: 0.7109405, b: 1, a: 1}
+  - {r: 1, g: 0.9128059, b: 0, a: 1}
+  Wall: {fileID: 1842817277888541580, guid: cf16b2a8c5a79544f99eb4019486ecca, type: 3}
+  Box: {fileID: 1842817277888541580, guid: e9ef1eec93661a8468002b6e3a07daf4, type: 3}
+  BugBox: {fileID: 1842817277888541580, guid: 3968d5e3249a3904fa4c9efa9d50922c, type: 3}
+  MaxBoxes: 6
+  Bomb: {fileID: 4004026871716563880, guid: 9b653c37574ef704d9beea42a73b7725, type: 3}
+  MaxBombs: 5
+  TimeStepSeconds: 0.01
+  PlayersCantSpawnOn:
+    serializedVersion: 2
+    m_Bits: 3328
+  MinimapTextureSize: 10
+  NearMapTextureSize: 11
+  RenderAiInputMaps: 0
